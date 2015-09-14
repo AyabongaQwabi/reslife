@@ -1,0 +1,22 @@
+{
+  "name": "Reslife",
+  "version": "0.0.0",
+  "description": "Reslife Web Application for students and employees",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AyabongaQwabi/reslife.git"
+  },
+  "author": "Ayabonga Qwabi",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/AyabongaQwabi/reslife/issues"
+  },
+  "dependencies": {
+    "express-handlebars": "~2.0.1",
+    "express": "~4.13.3"
+  }
+}

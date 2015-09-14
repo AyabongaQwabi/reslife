@@ -1,5 +1,6 @@
 
 
+
   <body id='loginBody'>
 
     
@@ -7,15 +8,16 @@
     <div class="container">
 
       <div class="starter-template" id='login'>
-        <h1>Reslife @ <i>UWC</i></h1>
-        <p class="lead">Stay up to date on what's happening at your res</p>
-		<h4>Username</h4>
-		<input type='text' class='text' placeholder='3242004@myuwc.ac.za'><br>
-		<h4>Password</h4>
-		<input type='text' class='text' placeholder='your Udubs password'> <br>
-		<button class='btn' type='button'> Login </button>
-	  </div>
-
+         <div id='header'>
+            <h1>Reslife @ <i>UWC</i></h1>
+            <p class="lead">Stay up to date on what's happening at your res</p>
+    		<h4>Username</h4>
+    		<input type='text' class='text' placeholder='eg 3242004'><br>
+    		<h4>Password</h4>
+    		<input type='text' class='text' placeholder='your Udubs password'> <br>
+    		<button class='btn' type='button'> Login </button>
+    	  </div>
+    </div>
 
 	</div>
     <!-- /.container -->
@@ -30,4 +32,9 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
-
+ 
+ <script type='text/javascript'>
+    $(document).ready(function(){
+        $('#loginBody').animate({marginTop:'40%'})
+    })
+  </script>

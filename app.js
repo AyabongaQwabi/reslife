@@ -11,4 +11,20 @@ app.get('/',function(req,res){
 	res.render('home')
 })
 
+app.get('/login',function(req,res){
+	res.render('login')
+})
+app.get('/events',function(req,res){
+	res.render('events')
+})
+app.get('/jobs',function(req,res){
+	res.render('jobs')
+})
+app.get('/sports',function(req,res){
+	res.render('sports')
+})
+app.get('/participate',function(req,res){
+	res.render('participate')
+})
+
 app.listen(3001)
