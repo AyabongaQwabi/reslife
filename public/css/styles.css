@@ -1,0 +1,66 @@
+input{
+  display:inline;
+  background:gold;
+  color:navy;
+  padding:2%;
+  outline:none;
+  border:none;
+  margin-bottom:5%;
+}
+#footer{
+  background:navy;
+  color:white;
+  padding:10%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top:50%;
+  
+}
+#bodyImg{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top:50%;
+}
+#login{
+   padding:auto;
+   margin:auto;
+   
+   text-align:center;
+}
+body {
+  padding-top: 50px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+  
+}
+
+.navbar-inverse{
+  background:navy;
+  color:white;
+}
+
+#mainHead{
+  background:Navy;
+  color:white;
+}
+.btn{
+  padding:3%;
+  width:20%;
+  font-weight:900;
+  background:gold;
+  color:navy;
+}
+
+.navbar-brand{
+  color:Gold;
+  font-size:16px;
+}
+.dates{
+  position:absolute;
+  background:Grey;
+}
