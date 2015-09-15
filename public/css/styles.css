@@ -12,6 +12,7 @@ input{
   text-align: center;
   box-shadow: 1px 1px 5px 1px black;
 }
+
 #footer{
   background:navy;
   color:white;
@@ -121,4 +122,31 @@ ul.navbar-nav{
 
 :-ms-input-placeholder {  
    color: black;  
+}
+
+
+
+/* EVENTS HANDLEBAR */
+
+.eventHead{
+  background-size:cover;
+  border:1px solid black;
+  padding:10%;
+}
+.eventDesc{
+  background:white;
+  color:black;
+  border:1px solid black;
+  padding:7.5%;
+  text-shadow:none;
+}
+.event{
+  margin-top: 5%;
+}
+.eventName{
+  background:black;
+
+  border-radius:3px;
+  border:1px solid gold;
+  text-align: center;
 }

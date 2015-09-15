@@ -2,14 +2,27 @@
 
 	      <div id='slider' class="starter-template">
 	      		<div id='header'>
-			        <h1>Reslife Events @ <i>UWC</i></h1>
-			        <p class="lead">Stay up to date on what's happening at your res</p>
+			        
+			        
 
-				
-				<button class='btn' type='button' onclick="window.location='/login'"> Login </button>
-				</div>
-		  </div>
-      
+					
+					{{#each events}}
 
-	  </div>
+						<div class='row event'>
+							<div class='eventHead col-md-4' style="background:url(images/{{image}});background-size:cover;"><h4 class='eventName'>  {{name}}  </h4></div>
+
+							<div class='eventDesc col-md-8'>
+								<h6> {{event_info}} </h6>
+								<div class='eventDate col-md-8'><h6> {{eventDate}} </h6></div>
+								<button class='btn col-md-4'>more</button>
+							</div>
+							
+						</div>
+
+					{{/each}}
+
+				</div>      
+
+	      </div>
+	   </div>
 
