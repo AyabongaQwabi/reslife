@@ -1,15 +1,28 @@
       <div class="container">
 
-	      <div id='slider' class="starter-template">
+	      <div id='slider' class="starter-template col-xs-">
 	      		<div id='header'>
-			        <h1>Reslife Jobs @ <i>UWC</i></h1>
-			        <p class="lead">Stay up to date on what's happening at your res</p>
+			        
+			        
 
-				
-				<button class='btn' type='button' onclick="window.location='/login'"> Login </button>
-				</div>
-		  </div>
-      
+					
+					{{#each jobs}}
 
-	  </div>
+						<div class='row job'>
+							<div class='jobHead col-xs-10'><h4 class='jobTitle'> {{title}}<span id='contact'>  &nbsp {{email}} || {{telephone}}</span> </h4></div>
+
+							<div class='jobDesc col-xs-10'>
+								<h6> {{description}} </h6>
+								<div class='eventDate col-md-8'><h6> {{due_date}} </h6></div>
+								<button class='btn col-md-4'>more</button>
+							</div>
+							
+						</div>
+
+					{{/each}}
+
+				</div>      
+
+	      </div>
+	   </div>
 

@@ -38,7 +38,13 @@ app.get('/events',function(req,res){
 })
 
 app.get('/jobs',function(req,res){
-	res.render('jobs')
+	var connection = mysql.createConnection(dbOptions)
+	connection.connect();
+	connection.query('select * from job_articles',function(err,jobs){
+			res.render('jobs',{jobs:jobs})
+			console.log('\n\nJOBS:'+JSON.stringify(jobs));
+	})
+
 })
 
 app.get('/sports',function(req,res){
