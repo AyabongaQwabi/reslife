@@ -1,9 +1,12 @@
 body{
-  background:url('../images/res2.jpg');
+  background:whitee no-repeat center center fixed; ;
    background-size:cover;
+   font-family: 'Oswald', sans-serif;
 }
 
-
+html{
+  font-family: 'Oswald', sans-serif;
+}
 
 input{
   display:inline;
@@ -24,7 +27,8 @@ input{
   background:navy;
   color:white;
   padding:5%;
-
+  height:30em;
+  margin-top: 10%;
   width: 100%;
   left: 0;
   
@@ -46,22 +50,34 @@ body {
 .starter-template {
   padding: 5px 5px;
   text-align: center;
-   
+  
   margin-left: -10%;
   width:116.4%;  
   color: white;
   text-shadow:1px 1px black;
-
+ font-family: 'Oswald', sans-serif;
+}
+.mainDiv{
+  padding: 5px 5px;
+  text-align: center;
+  margin-top:20%;
+  margin-left: 10%;
+  width:116.4%;  
+  color: white;
+  text-shadow:1px 1px black;
+ font-family: 'Oswald', sans-serif;
+ background:#000066;
 }
 #header{
   
   width:99.2%;
- margin-top:10%;
+
 
   
 
 }
 #header.btn{
+  font-family: 'Oswald', sans-serif;
   padding:5%;
 }
 .navbar-inverse{
@@ -77,12 +93,12 @@ body {
   padding:2%;
   width:20%;
   font-weight:900;
-  background:gold;
+  background:white;
   color:navy;
 }
 
 .navbar-brand{
-  color:Gold;
+  color:white;
   font-size:16px;
 }
 .navbar-brand{
@@ -94,22 +110,22 @@ body {
   background:Grey;
 }
 .navbar-toggle .collapsed{
-  background: gold;
+  background: white;
 }
 ul.navbar-nav{
   margin-top:3%;
   margin-left:3%;
 }
 .navbar-inverse .navbar-nav>li>a{
-  color:gold;
+  color:white;
 
 }
 .navbar-inverse .navbar-nav>li>a:hover{
   color:black;
- background:gold;
+ background:white;
 }
 .navbar-inverse .navbar-nav>.active>a{
-  background:gold;
+  background:white;
   color:black;
 }
 
@@ -130,30 +146,58 @@ ul.navbar-nav{
 }
 
 
-
+.row{
+  margin-top: -30%;
+}
 /* EVENTS HANDLEBAR */
 
 .eventHead{
   background-size:cover;
-  border:1px solid black;
+ font-family: 'Montserrat', sans-serif;
   padding:9.05%;
+   height:20em;
+}
+.OldeventHead{
+  background-size:cover;
+ font-family: 'Montserrat', sans-serif;
+  padding:9.05%;
+   height:20em;
+   border-radius:50px;
+   bord
 }
 .eventDesc{
-  background:white;
-  color:black;
-  border:1px solid black;
+  background:#000066;
+  color:gold;
+font-family: 'Montserrat', sans-serif;
   padding:7%;
   text-shadow:none;
+ height:20em;
+
+}
+h6{
+  font-family: 'Montserrat', sans-serif;
 }
 .event{
-  margin-top: 5%;
+  box-shadow:1px 1px 10px 1px black;
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding:1%;
+  background:white;
 }
-.eventName{
-  background:black;
+.oldEvent{
+  box-shadow:1px 1px 10px 1px black;
+  margin-top: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding:1%;
+  background:#000066;
+}
+.eventName {
+  color:white;
 
-  border-radius:3px;
-  border:1px solid gold;
-  text-align: center;
+
+
 }
 
 
@@ -162,31 +206,52 @@ ul.navbar-nav{
 /* JOBS HANDLEBAR */
 
 .jobHead{
-  background:gold;
-  border:1px solid black;
-  padding:5%;
-  margin-left: 10%;
+  background-size:cover;
+ font-family: 'Montserrat', sans-serif;
+  padding:9.05%;
+   height:20em;
 }
-
+.OldeventHead{
+  background-size:cover;
+ font-family: 'Montserrat', sans-serif;
+  padding:9.05%;
+   height:20em;
+   border-radius:50px;
+   bord
+}
 .jobDesc{
-  background:white;
-  color:black;
-  border:1px solid black;
+  background:#000066;
+  color:gold;
+font-family: 'Montserrat', sans-serif;
   padding:7%;
   text-shadow:none;
-  margin-left: 10%;
-}
+ height:20em;
 
+}
+h6{
+  font-family: 'Montserrat', sans-serif;
+}
 .job{
-  margin-top: 5%;
+  box-shadow:1px 1px 10px 1px black;
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding:1%;
+  background:white;
 }
+.jobEvent{
+  box-shadow:1px 1px 10px 1px black;
+  margin-top: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding:1%;
+  background:#000066;
+}
+.jobName {
+  color:white;
 
-.jobName{
-  background:black;
 
-  border-radius:3px;
-  border:1px solid gold;
-  text-align: center;
+
 }
 
 #contact{
