@@ -1,5 +1,6 @@
 var express = require('express');
 var handlebars =require('express-handlebars')
+ var bodyParser = require('body-parser')
 var mysql = require('mysql')
 myConnection = require('express-myconnection');
             //database = require('./database');
@@ -18,7 +19,8 @@ var app = express();
 app.use(express.static('public'))
 app.engine('handlebars',handlebars({defaultLayout:'main'}))
 app.set('view engine','handlebars')
-
+app.use(bodyParser.urlencoded({ extended: false }))
+            app.use(bodyParser.json())
 app.get('/',function(req,res){
 	res.render('home')
 })
@@ -31,12 +33,17 @@ app.get('/events',function(req,res){
 	var connection = mysql.createConnection(dbOptions)
 	connection.connect();
 	connection.query('select * from event',function(err,events){
-			res.render('events',{events:events})
+		connection.query('select * from event_type',function(err,eventTypes){
+			res.render('events',{events:events ,eventTypes:eventTypes})
 			console.log('EVENTS:'+JSON.stringify(events));
+		})
 	})
+})
+app.post('/events/new',function(req,res){
+
+		console.log('\n\n Form:'+JSON.stringify(req.body))
 
 })
-
 app.get('/jobs',function(req,res){
 	var connection = mysql.createConnection(dbOptions)
 	connection.connect();
