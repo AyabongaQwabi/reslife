@@ -31,7 +31,7 @@ input{
   margin-top: 10%;
   width: 100%;
   left: 0;
-  
+  position: relative;
   
 }
 
@@ -50,7 +50,7 @@ body {
 .starter-template {
   padding: 5px 5px;
   text-align: center;
-  
+ 
   margin-left: -10%;
   width:116.4%;  
   color: white;
@@ -62,11 +62,11 @@ body {
   text-align: center;
   margin-top:20%;
   margin-left: 10%;
-  width:116.4%;  
+
   color: white;
   text-shadow:1px 1px black;
  font-family: 'Oswald', sans-serif;
- background:#000066;
+ 
 }
 #header{
   
@@ -75,6 +75,13 @@ body {
 
   
 
+}
+.default{
+  background:#000066;
+  margin-top: -10%;
+  box-shadow: 1px 1px 10px 1px navy;
+  border:1px solid white;
+  padding: 2%;
 }
 #header.btn{
   font-family: 'Oswald', sans-serif;
@@ -93,7 +100,7 @@ body {
   padding:2%;
   width:20%;
   font-weight:900;
-  background:white;
+
   color:navy;
 }
 
@@ -204,14 +211,18 @@ h6{
 
 
 /* JOBS HANDLEBAR */
-
+.jobsearch{
+  margin-top:10%;
+  position: relative;
+}
 .jobHead{
   background-size:cover;
- font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding:9.05%;
-   height:20em;
+  height:20em;
+  background:#000066;
 }
-.OldeventHead{
+.OldjobHead{
   background-size:cover;
  font-family: 'Montserrat', sans-serif;
   padding:9.05%;
@@ -220,12 +231,14 @@ h6{
    bord
 }
 .jobDesc{
-  background:#000066;
-  color:gold;
-font-family: 'Montserrat', sans-serif;
+  
+  color:black;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
   padding:7%;
   text-shadow:none;
- height:20em;
+  height:auto;
+  text-align: center;
 
 }
 h6{
@@ -235,7 +248,7 @@ h6{
   box-shadow:1px 1px 10px 1px black;
   margin-top: 1%;
   margin-left: 10%;
-  margin-right: 10%;
+  margin-right: 6%;
   padding:1%;
   background:white;
 }
