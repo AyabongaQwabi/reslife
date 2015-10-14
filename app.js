@@ -38,7 +38,7 @@ app.get('/events',function(req,res){
 				console.log('\n\nREMOVING CAHRS:'+event.image)
 				event.image = event.image.replace("`","'")
 				event.image = String(event.image)
-				console.log('\n\nNOW :'+event.image)
+				console.log('\n\nNOW :'+event.image+' '+typeof(event.image))
 			})
 			res.render('events',{events:events ,eventTypes:eventTypes})
 			console.log('EVENTS:'+JSON.stringify(events));
