@@ -34,6 +34,11 @@ app.get('/events',function(req,res){
 	connection.connect();
 	connection.query('select * from event',function(err,events){
 		connection.query('select * from event_type',function(err,eventTypes){
+			events.forEach(function(event){
+				console.log('\n\nREMOVING CAHRS:'+event.image)
+				event.image = event.image.replace("`","'")
+				console.log('\n\nNOW :'+event.image)
+			})
 			res.render('events',{events:events ,eventTypes:eventTypes})
 			console.log('EVENTS:'+JSON.stringify(events));
 		})
