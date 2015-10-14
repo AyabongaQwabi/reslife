@@ -1,6 +1,18 @@
-      <div class="container">
+    <div class="container">
+      	
+	    <div class='btn-group btn-group-lg jobsearch col-xs-12'>
 
-	      <div id='slider' class="starter-template col-xs-">
+	      	   <button class='btn btn-primary '>Create Job &nbsp <span class="glyphicon glyphicon-plus"></span></button>
+	      	   <button class='btn btn-primary '>My Applications &nbsp <span class="glyphicon glyphicon-file"></span></button>
+	      	   <button class='btn btn-warning'>Work Study &nbsp <span class="glyphicon glyphicon-folder-open"></span></button>
+	      	   <button class='btn btn-primary '>Search Jobs &nbsp <span class="glyphicon glyphicon-search"></span></button>
+	      	   <button class='btn btn-primary '>Profile  &nbsp <span class="glyphicon glyphicon-user"></span></button>
+	          
+			 
+		</div>
+
+		
+	    <div id='slider' class="starter-template col-xs-12">
 	      		<div id='header'>
 			        
 			        
@@ -9,12 +21,20 @@
 					{{#each jobs}}
 
 						<div class='row job'>
-							<div class='jobHead col-xs-10'><h4 class='jobTitle'> {{title}}<span id='contact'>  &nbsp {{email}} || {{telephone}}</span> </h4></div>
+							<div class='jobHead col-xs-12'><h4 class='jobTitle'> {{title}}<span id='contact'>  &nbsp {{email}} || {{telephone}}</span> </h4></div>
 
-							<div class='jobDesc col-xs-10'>
+							<div class='jobDesc col-xs-12'>
 								<h6> {{description}} </h6>
 								<div class='eventDate col-md-8'><h6> {{due_date}} </h6></div>
-								<button class='btn col-md-4'>more</button>
+								<br>
+								<hr>
+								<div class="btn-group btn-group-lg" role="group" aria-label="...">
+								<button class='btn btn-primary col-md-4'>Apply &nbsp <span class="glyphicon glyphicon-plus"></span></button>
+								<button class='btn btn-primary col-md-4'>Print &nbsp  <span class="glyphicon glyphicon-list-alt"></span></button>
+								<button class='btn btn-warning col-md-4'>Edit &nbsp  <span class="glyphicon glyphicon-pencil"></span></button>
+								<button class='btn btn-danger col-md-4'>Delete &nbsp  <span class="glyphicon glyphicon-trash "></span></button>
+								<button class='btn btn-primary col-md-4'>More &nbsp <span class="glyphicon glyphicon-list"></span></button>
+								</div>
 							</div>
 							
 						</div>
