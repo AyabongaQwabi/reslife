@@ -37,7 +37,7 @@ app.get('/events',function(req,res){
 			events.forEach(function(event){
 				console.log('\n\nREMOVING CAHRS:'+event.image)
 				event.image = event.image.replace("`","'")
-				event.image = String(event.image.substring(1,event.image.length-2))
+				event.image = String(event.image.substring(1,event.image.length-1))
 				console.log('\n\nNOW :'+event.image+' '+typeof(event.image))
 			})
 			res.render('events',{events:events ,eventTypes:eventTypes})
